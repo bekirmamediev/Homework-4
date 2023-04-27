@@ -135,11 +135,13 @@ body {
 }
 
 
-
 .main-nav{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
+
+
 
 /* hero */
 .head-title {
@@ -456,11 +458,14 @@ body {
 
 .card-list .item {
     width: 370px;
-    border: 1px solid #EEEEEE;
+    
 }
 
 .discription {
     padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 
