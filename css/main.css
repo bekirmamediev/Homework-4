@@ -259,7 +259,7 @@ border-bottom: 1px solid #ECECEC;
 
 /* advantages */
 
-.advantages-list .item::before {
+/* .advantages-list .item::before {
     content: '';
     display: inline-block;
     width: 270px;
@@ -283,6 +283,21 @@ border-bottom: 1px solid #ECECEC;
 
 .advantages-list .astronaut::before {
     background-image: url('../images/astronaut1.svg');
+} */
+
+.advantages-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 270px;
+    height: 120px;
+    background-color: var(--gray-back); 
+}
+
+.advtantages-icon{
+    width: 70px;
+    height: 70px;
 }
 
 .advantages-title {
