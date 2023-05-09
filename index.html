@@ -41,11 +41,11 @@
        
     </header>
 
-    <main>
+    <main class="main">
         <section class = " upper">
             <div class = "container">
                 <h1 class="head-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="button">Замовити послугу</button>
+                <button data-modal-open class="button">Замовити послугу</button>
             </div>
                 
             
@@ -100,9 +100,20 @@
             <div class = "container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="list horizontal-list">
-                    <li class="item"><img src="./images/box1.jpeg" alt="приклад роботи" width="370"></li>
-                    <li class="item"><img src="./images/box2.jpeg" alt="приклад роботи" width="370"></li>
-                    <li class="item"><img src="./images/box3.jpeg" alt="приклад роботи" width="370"></li>
+                    <li class="item examples-relative">
+                        <img src="./images/box1.jpeg" alt="приклад роботи" width="370">
+                        <p class="examples-thumb">Десктопні додатки</p>
+                    
+                    </li>
+                    <li class="item examples-relative">
+                        <img src="./images/box2.jpeg" alt="приклад роботи" width="370">
+                        <p class="examples-thumb">Мобільні додатки</p>
+                    </li>
+                    <li class="item examples-relative">
+                        <img src="./images/box3.jpeg" alt="приклад роботи" width="370">
+                        <p class="examples-thumb">Дизайнерські рішення</p>
+
+                    </li>
                 </ul>    
             </div>
         </section>
@@ -324,8 +335,24 @@
         
     </footer>
 
+    <div data-modal  class="backdrop is-hiden">
+        <div class="modal">
+            <button data-modal-close >Закрити</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
+<script>
+    const { height: pageHeaderHeight } = document
+        .querySelector(".page-header")
+        .getBoundingClientRect();
+
+    document.body.style.paddingTop = '${pageHeaderHeight}px';    
+</script>
+
     
 </body>
 
 
 </html>
+
